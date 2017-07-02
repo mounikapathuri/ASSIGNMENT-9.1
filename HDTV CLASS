@@ -1,0 +1,16 @@
+
+package assignment9.pkg1;
+
+/**
+ *
+ * @author mounika
+ */
+class HDTV {
+    String BName;
+ 	int Size;
+ 	HDTV(String BrandName,int Size){
+ 		this.BName=BrandName;
+ 		this.Size=Size;
+ 	}
+    
+}
