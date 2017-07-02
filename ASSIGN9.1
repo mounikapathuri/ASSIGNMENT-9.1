@@ -1,0 +1,28 @@
+package assignment9.pkg1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/**
+ *
+ * @author mounika
+ */
+public class ASSIGNMENT91 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+    HDTV h=new HDTV("samsung",72);
+		HDTV h1=new HDTV("sony",73);
+		HDTV h2=new HDTV("LG",74);
+		ArrayList<HDTV>a=new ArrayList<HDTV>();
+		a.add(h);
+		a.add(h1);
+		a.add(h2);
+		Iterator<HDTV> itr= a.iterator();
+		
+		while(itr.hasNext()){
+			HDTV HD=(HDTV)itr.next();
+			System.out.println("TV Name:"+HD.BName+"  Size :"+" "+HD.Size);
+		}
+    }
+}
